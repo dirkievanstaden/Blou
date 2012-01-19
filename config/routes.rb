@@ -1,14 +1,21 @@
 Blou::Application.routes.draw do
   
-  match '/biography', :to => 'pages#biography'
-  
-  match '/photogallery', :to => 'pages#photogallery'
+  match '/theduo', :to => 'pages#theduo'
   
   match '/music', :to => 'pages#music'
   
+  match '/shows', :to => 'pages#shows'
+  
+  match '/gallery', :to => 'pages#gallery'
+  
   match '/videos', :to => 'pages#videos'
+   
+  match '/press', :to => 'pages#press'
+  
+  match '/shop', :to => 'pages#shop'
   
   match '/contact', :to => 'pages#contact'
+   
   root :to => 'pages#home'
   
   
